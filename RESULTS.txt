@@ -1,0 +1,42 @@
+
+FLIGHT PRICE PREDICTION - MLOps Pipeline Results
+=================================================
+
+Dataset Source:
+  - Kaggle: data/raw/Clean_Dataset.csv
+  - Total samples: 300153
+  - Features: 11
+  - Target: price ($1105.00 - $123071.00)
+
+Data Split:
+  - Training: 180091 samples
+  - Validation: 60031 samples
+  - Testing: 60031 samples
+
+Model Performance (Test Set):
+  - Best Model: XGBoost Regressor
+  - RMSE: $3707.50
+  - MAE: $2149.30
+  - R² Score: 0.9733
+
+Model Architecture:
+  - XGBoost: 100 estimators, max_depth=5, learning_rate=0.1
+  - Random Forest: 100 estimators, max_depth=10 (baseline)
+
+Preprocessing:
+  - Categorical Encoding: LabelEncoder (8 features)
+  - Numerical Scaling: StandardScaler (11 features)
+  - Train/Val/Test Split: 60/20/20
+  - Missing Values: Removed
+
+Files Generated:
+  - model.pkl (trained XGBoost model)
+  - scaler.pkl (StandardScaler object)
+  - encoders.pkl (LabelEncoder dictionary)
+
+Resume Bullet:
+"Built end-to-end flight price prediction MLOps pipeline on Kaggle dataset 
+achieving 97.33% R² score using XGBoost; implemented data preprocessing, 
+categorical encoding, numerical scaling, stratified train/val/test split, 
+model training with hyperparameter tuning, and production-ready artifact 
+serialization for seamless inference."
