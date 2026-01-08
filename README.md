@@ -1,4 +1,5 @@
-﻿# Flight Price Prediction MLOps Pipeline
+![MLOps Pipeline](https://github.com/purnimaax/flight-price-prediction-mlops/actions/workflows/cicd.yml/badge.svg)
+# Flight Price Prediction MLOps Pipeline
 
 ## Project Overview
 This project predicts flight prices with 97% accuracy using XGBoost and Random Forest. It includes a full pipeline for data cleaning, feature engineering, training, and inference.
